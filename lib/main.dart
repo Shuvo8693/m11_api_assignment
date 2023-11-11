@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'Screen/image_list_screen.dart';
 void main(){
-  runApp(PicList());
+  runApp(const PicList());
 }
 class PicList extends StatelessWidget {
   const PicList({super.key});
@@ -10,7 +10,7 @@ class PicList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return
-      MaterialApp(
+      const MaterialApp(
         home: ImageListScreen(),
       );
   }

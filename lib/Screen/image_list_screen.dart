@@ -50,7 +50,7 @@ class _ImageListScreenState extends State<ImageListScreen> {
         body: ListView.builder(
           itemBuilder: (context, index) {
             return ListTile(
-                title: Text('${imageList[index].title}'),
+                title: Text(imageList[index].title),
                 leading: SizedBox(
                   width: 90,
                   height: 80,
@@ -59,7 +59,7 @@ class _ImageListScreenState extends State<ImageListScreen> {
                         final ImageItem imL=imageList[index];
                         Navigator.push(context, MaterialPageRoute(builder: (context)=>ImageDetail(imL: imL,)));
                       },
-                      title: Image.network('${imageList[index].thumbnailUrl}',
+                      title: Image.network(imageList[index].thumbnailUrl,
                         width: 50,
                         height: 50,
                       )),

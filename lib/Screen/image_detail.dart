@@ -22,7 +22,7 @@ class ImageDetail extends StatelessWidget {
               ),
               Text('Title: ${imL.title}',),
               const SizedBox(height: 20,),
-              Text('ID: ${imL.id.toString()}',style: TextStyle(fontSize: 15),),
+              Text('ID: ${imL.id.toString()}',style: const TextStyle(fontSize: 15),),
             ],
           ),
         ),
